@@ -1,0 +1,20 @@
+--- #YAML:1.0
+name: Posy-Plugin-NearLinks
+version: 0.40
+author:
+  - Kathryn Andersen
+abstract: |-
+  Posy plugin to give links of articles in the current category
+license: perl
+requires:
+  Posy: 0.4
+  Posy::Plugin::EntryTitles: 0.4
+  Posy::Plugin::LinkList: 0.4
+  Posy::Plugin::TextTemplate: 0.4
+build_requires:
+  Test::More: 0
+provides:
+  Posy::Plugin::NearLinks:
+    file: lib/Posy/Plugin/NearLinks.pm
+    version: 0.40
+generated_by: Module::Build version 0.2607

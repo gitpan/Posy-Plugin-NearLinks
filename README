@@ -1,0 +1,48 @@
+
+==== NAME ====
+
+Posy::Plugin::NearLinks - Posy plugin to give links of articles in the
+current category
+
+
+==== VERSION ====
+
+This describes version ``0.40'' of Posy::Plugin::NearLinks.
+
+
+==== DESCRIPTION ====
+
+This provides a method which can be called from the "head" flavour template
+(if one is using the TextTemplate plugin). This finds all the entries in the
+current category, and their titles, and makes a list of links to them.
+
+This depends on the Posy::Plugin::EntryTitles plugin to get the titles from
+the entries. This depends on the Posy::Plugin::LinkList plugin to make the
+actual list of links.
+
+
+==== REQUIRES ====
+
+    Posy
+    Posy::Core
+    Posy::Plugin::TextTemplate
+    Posy::Plugin::EntryTitles
+    Posy::Plugin::LinkList
+
+    Test::More
+
+
+==== AUTHOR ====
+
+    Kathryn Andersen (RUBYKAT)
+    perlkat AT katspace dot com
+    http://www.katspace.com
+
+
+==== COPYRIGHT AND LICENCE ====
+
+Copyright (c) 2004-2005 by Kathryn Andersen
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+
