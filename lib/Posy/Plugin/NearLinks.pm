@@ -7,11 +7,11 @@ Posy::Plugin::NearLinks - Posy plugin to give links of articles in the current c
 
 =head1 VERSION
 
-This describes version B<0.41> of Posy::Plugin::NearLinks.
+This describes version B<0.42> of Posy::Plugin::NearLinks.
 
 =cut
 
-our $VERSION = '0.41';
+our $VERSION = '0.42';
 
 =head1 SYNOPSIS
 

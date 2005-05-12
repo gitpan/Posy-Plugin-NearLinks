@@ -8,9 +8,9 @@ my $builder = Module::Build->new(
     dist_author         => 'Kathryn Andersen',
     dist_version_from   => 'lib/Posy/Plugin/NearLinks.pm',
 	requires            => {
-	'Posy' => 0.90,
+	'Posy' => 0.95,
 	'Posy::Plugin::TextTemplate' => 0.41,
-	'Posy::Plugin::EntryTitles' => 0.50,
+	'Posy::Plugin::EntryTitles' => 0.51,
 	'Posy::Plugin::LinkList' => 0.41,
 	},
     build_requires => {
@@ -19,3 +19,7 @@ my $builder = Module::Build->new(
 );
 
 $builder->create_build_script();
+# create the Makefile.PL
+use Module::Build::Compat;
+print "creating Makefile.PL\n";
+Module::Build::Compat->create_makefile_pl('passthrough', $builder);
